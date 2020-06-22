@@ -1,0 +1,29 @@
+/* portfolio */
+
+.srch-btn .srch-btn-item + .srch-btn-item {
+  margin-left: 8px;
+}
+
+.srch-btn {
+  margin-bottom: 56px;
+
+  .container & {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color;
+
+  &:hover,
+  &:focus {
+  color: $color1;}
+}

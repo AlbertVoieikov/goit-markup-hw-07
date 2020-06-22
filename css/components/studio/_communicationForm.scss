@@ -1,0 +1,250 @@
+/* communication form */
+
+
+.form {
+  position: relative;
+  top: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  width: 550px;
+
+  background: $color3;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.form-close {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20%, -20%);
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: $color3;
+  background-image: url(../images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color;
+}
+
+.form-field {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+
+  & input {
+    margin: 0;
+    padding: 12px 42px;
+  }
+}
+
+.form-input {
+  margin: 0;
+  width: 100%;
+
+  font: inherit;
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  &:focus {
+  border: 1px solid $color1;}
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 45px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+  fill: $color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-input:focus ~ & {
+    fill: $color1;
+  }
+}
+
+
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: $color1;
+
+  transform: translate(-32px, -40px);
+}
+
+/* comment */
+
+.form-comment {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textarea {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 12px 16px 12px 16px;
+
+  font: inherit;
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus {
+  border: 1px solid $color1;
+}
+
+.comment {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  transform: translateY(12px 16px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus + .comment,
+.textarea:not(:placeholder-shown) + .comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: $color1;
+
+  transform: translateY(-30px);
+}
+
+.form-checkbox {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: $color3;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+  display: block;
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid $color;
+  border-radius: 2px;
+  margin-right: 8px;
+
+  .checkbox:checked + & {
+    background-color: $color1;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $color1;
+  }
+}
+
+.policy-link {
+  color: $color1;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 10px 56px;
+
+  color: $color3;
+  background-color: $color1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: $color1;
+
+  &:hover,
+  &:focus {
+  cursor: pointer;}
+}
+
+

@@ -1,0 +1,144 @@
+/* footer */
+
+.footer {
+  background: $color7;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18x;
+  letter-spacing: 0.03em;
+  color: $color1;
+
+  &-color {
+    color: $color3;
+  }
+}
+
+
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color3;
+}
+
+
+
+.address-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+  color: $color1;
+}
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color3;
+}
+
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding-top: 48px;
+}
+
+.ft-logo-item {
+  display: block;
+}
+
+.sl-list {
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 56px;
+}
+
+.sl-list .sl-item + .sl-item {
+  margin-left: 11px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+  fill: $color3;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  background-color: $color1;}
+}
+
+
+
+/* footer-subscribe */
+
+.footer-form {
+  margin-top: 20px;
+}
+
+.e-mail {
+  width: 360px;
+  padding: 18px 12px;
+
+  color: $color2;
+
+  background: $color7;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  border-radius: 4px;
+}
+
+.footer-btn {
+  display: inline-flex;
+  min-width: 200px;
+
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 16px 30px;
+  color: $color3;
+  background: $color1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.icon-send {
+  /* position: absolute; */
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+}

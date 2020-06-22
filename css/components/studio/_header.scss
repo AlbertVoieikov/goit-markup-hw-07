@@ -1,0 +1,140 @@
+
+/* main nav */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $main-padding;
+  padding-right: $main-padding;
+  width: $main-width;
+  outline: 2px solid grey;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $color1;
+
+  &-color {
+    color: $color;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* site nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+  /* margin-bottom: 30px; */
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.link {
+  position: relative;
+
+  .site-nav & {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .site-nav &:hover,
+  .site-nav &:focus {
+    color: $color1;
+  }
+
+  .active & {
+    color: $color1;
+  }
+}
+
+
+
+.line::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $color1;
+  border-radius: 2px;
+
+  transform: scaleY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .active & {
+    transform: scaleY(1);
+  }
+}
+
+.line:hover::before,
+.line:focus::before {
+    transform: scaleY(1);
+}
+
+/* Contacts */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $color2;
+  fill: $color2;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color1;
+    fill: $color1;
+  }
+}
+
+.envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+}

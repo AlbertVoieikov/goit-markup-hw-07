@@ -1,0 +1,68 @@
+/* customers */
+
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-list .customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+.customers-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $color6;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  fill: $color6;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+      fill: $color1;
+      border-color: $color1;
+    }
+}
+
+.logo-1 {
+  display: block;
+  width: 45px;
+  height: 50px;
+}
+
+.logo-2 {
+  display: block;
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  display: block;
+  width: 41px;
+  height: 43px;
+}
+
+.logo-4 {
+  display: block;
+  width: 80px;
+  height: 42px;
+}
+
+.logo-5 {
+  display: block;
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  display: block;
+  width: 89px;
+  height: 46px;
+}
